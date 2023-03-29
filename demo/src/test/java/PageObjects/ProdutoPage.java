@@ -18,7 +18,7 @@ public class ProdutoPage {
         return driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
     }
     public WebElement getCartButton() {
-        //return driver.findElement(By.class("shopping_cart_link")); 
-        return driver.findElement(By.id("shopping_cart_badge"));
+        return driver.findElement(By.className("shopping_cart_link")); 
+        //return driver.findElement(By.id("shopping_cart_badge"));
     }
 }

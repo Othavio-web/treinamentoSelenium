@@ -11,7 +11,7 @@ public class GerericPage {
         this.driver = driver;
     }
     public WebElement getHomeTextSpan() {
-        return driver.findElement(By.xpath("//div[@id='header_container']/div[@class='header_secondary_conteiner']/span"));
+        return driver.findElement(By.xpath("//div[@id='header_container']/div[@class='header_secondary_container']/span"));
     }
     public WebElement getNomeproductLabel() {
         return driver.findElement(By.className("inventory_item_name"));

@@ -21,8 +21,9 @@ public class ProdutoTask {
     public void selecionarProduto() {
         genericValidation.validationPages("Products");
         produtoPage.getProductLink().click();
+        produtoPage.getAddCartLink().click();
         produtoPage.getCartButton().click();
-        genericValidation.validationPages("your cart");
+        genericValidation.validationPages("Your Cart");
         genericValidation.validationProduto();
         cartPage.getButtoncheckout().click();
     }    

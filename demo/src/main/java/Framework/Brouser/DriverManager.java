@@ -19,6 +19,7 @@ public class DriverManager {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--start-maximixed");
             chromeOptions.addArguments("--incognito");
+            chromeOptions.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(chromeOptions);
             break;
         case EDGE:
